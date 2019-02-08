@@ -6,7 +6,7 @@ function getPhinxDbConfig(): array
 {
     $root = dirname(ComposerFactory::getComposerFile());
 
-    $env = require $root .'/app/etc/env.php';
+    $env = require $root .'/magento/app/etc/env.php';
 
     $dbConfig = $env['db']['connection']['default'];
 
